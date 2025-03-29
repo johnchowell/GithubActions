@@ -6,6 +6,8 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
     steps:
+      - name: run unit tests
+        run: dotnet test
       - uses: actions/checkout@v2
       - name: install dotnet
         uses: actions/setup-dotnet@v4
